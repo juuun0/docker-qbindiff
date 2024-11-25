@@ -1,0 +1,7 @@
+#!/bin/sh
+
+docker run -it --rm \
+  -v "$(pwd):/workspace" \
+  -w /workspace \
+  juuun0/qbindiff \
+  "$@"
